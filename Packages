@@ -1,0 +1,407 @@
+Package: Tomkids.YoutubeFix
+Version: 1.3-1.0.6
+Architecture: iphoneos-arm
+Maintainer: Tomkids Converted
+Filename: debs/Tomkids.Youtube & Tubereplacer Fix chạy nền.deb
+Size: 7214720
+MD5sum: 6d24f421c721ccb9ac25d9174bf48a26
+SHA1: 4ae57955db3baf5751bfc88dad0ece46f97559cc
+SHA256: 64db204a06edf9db338feacd7d8d26c3b731146b1cb9bc449ec04af4bd7b80d6
+Description: Youtube & Tubereplacer  Merged by Tomkids
+Author: Tomkids
+Name: Youtube & Tubereplacer Fix chạy nền
+
+Package: ai.akemi.appsyncunified
+Version: 112.0
+Architecture: iphoneos-arm
+Maintainer: Karen/あけみ <karen@akemi.ai>
+Installed-Size: 636
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 16.5.1)
+Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified
+Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
+Provides: appsync, net.angelxwind.appsyncunified
+Filename: debs/nodelete-ai.akemi.appsyncunified.deb
+Size: 51366
+MD5sum: 3c015030566bc95a12ce5f5b32c1d56f
+SHA1: 5196bda082a981b3e9f4b690b4284aa4f31ff0f0
+SHA256: b0c82c873b816ed78cf1b1fdec4977f0fbbad72f6cac436ffd8e3f32d50d3c10
+Section: Appsync
+Homepage: https://cydia.akemi.ai/
+Description: Appsync cho iOS 5+
+Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
+Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
+Name: AppSync Unified
+
+Package: com.ThePeaShooter.LiquidASS
+Version: v1.0.0
+Architecture: iphoneos-arm
+Maintainer: RetroWeirdos
+Filename: debs/com.ThePeaShooter.LiquidASS_v1.0.0_iphoneos-arm.1.deb
+Size: 7341928
+MD5sum: 25c5ab51e63e5ac8f02bfe9c34274f2f
+SHA1: 9b4839baf4c7aac702ce3d5206ce72a1b820d93d
+SHA256: ec7761c312ff9894b0082915519caaca63076cb880caad082762395f05fd6438
+Section: Theme
+Description: Mang "Liquid Glass" iOS 26 ve iOS 8
+Author: ThePeaShooter
+Name: LiquidASS
+
+Package: com.ashapps.wifipasswordslist
+Version: 1.0.1-1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 3512
+Depends: firmware (>= 7.0), firmware (<= 10.3.4)
+Filename: debs/wifipasswordslist_1.0.1-1.deb
+Size: 1313896
+MD5sum: 0e3e18e8ddcdf045a4e426a44773debb
+SHA1: 19ceb93f86f5d2966403283e3f1d09a3024f3fad
+SHA256: 08cbe4f382db11b53f3431df7c14d66ff4981f3e6b9fdcc3b1523222a927715b
+Section: Tools
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifipasswordslistDp
+Description: Xem mat khau wifi da luu
+Tag: purpose::extension, compatible::ios7, compatible::ios8, compatible::ios9
+Author: Ash Apps <support@multifl0w.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifipasswordslistDp
+Dev: aaronash
+Icon: file:///Applications/WifiPasswordList.app/Icon-60.png
+Name: Wifi Passwords List
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.broganminer.rounddock
+Version: 1.1.1-1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 391
+Depends: firmware (>= 7.0), firmware (<= 10.3.4), mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: debs/rounddock_1.1.1-1.deb
+Size: 23386
+MD5sum: 0dd7b665c84d4809175299f4d40c5cfa
+SHA1: 94a0238c34556d5bf69290f44077947571e92c38
+SHA256: 0cbbde6d280943ebcf68c5f48891840b3551fca9d14a09ef20fadbd95073a36e
+Section: Theme
+Priority: optional
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=rounddockDp
+Description: Lam thanh dock tron hon
+Tag: purpose::extension, compatible::ios7, compatible::ios8
+Author: Brogan Miner <Broganminer22@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=rounddockDp
+Dev: broganminer
+Icon: file:///Library/PreferenceBundles/rounddock.bundle/rounddock@2x.png
+Name: RoundDock
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.crazydoraemon.iapfree
+Version: 4.0.1
+Architecture: iphoneos-arm
+Maintainer: 疯狂机器猫 <136512876@qq.com>
+Installed-Size: 800
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.4001), com.crazydoraemon.commonlibs (>= 1.0.1)
+Filename: debs/com.crazydoraemon.iapfree_4.0.1_iphoneos-arm.deb
+Size: 486774
+MD5sum: 7f5e74f1ffff9c5da1b13d0aa3e937b3
+SHA1: d99ffc3b25041e129aaada63776ac13804cc685e
+SHA256: 130d56b283799e0e08a622e69356b1ce435a24f3c73534302f025919b4b8c799
+Section: Hack game
+Homepage: http://www.crazydoraemon.com
+Description: Hack thanh toan tien te trong game
+Author: Hariboo Archive
+Icon: file:///Applications/IAPFree.app/Icon-Small.png
+Name: IAPFree
+
+Package: com.dpkgdan.powertap
+Version: 1.1.3-3
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 270
+Depends: firmware (>= 7.1), firmware (<= 9.3.6), mobilesubstrate (>= 0.9.5000), preferenceloader
+Conflicts: com.dpkgdan.slidetoreboot, com.myrepospace.dpkgdan.powertap, com.myrepospace.dpkgdan.slidetoreboot
+Filename: debs/powertap_1.1.3-3.deb
+Size: 74784
+MD5sum: 66034ae67a4531b8c310d3a22914b987
+SHA1: 1ccf6e60848d4c7a38f06814ffa7db53aca24d08
+SHA256: 26c4afcc728fe6cf815a81d45d0e3c8c992f7b53eee49bd536324e9b383b9957
+Section: Useful thing
+Priority: optional
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=powertapDp
+Description: tap powerdown knob to reboot, respring, safe mode
+Tag: purpose::extension, compatible::ios7, compatible::ios8, compatible::ios9
+Author: Dan Saba <dpkgdan@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=powertapDp
+Dev: dpkgdan
+Name: Power Tap
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.hackyouriphone.localiapstore
+Version: 1.4-4
+Architecture: iphoneos-arm
+Maintainer: HackYouriPhone <repo@hackyouriphone.org>
+Depends: firmware (>= 6.0), firmware (<= 12.5.7), mobilesubstrate, preferenceloader
+Filename: debs/com.hackyouriphone.localiapstore_1.4-4_iphoneos-arm.deb
+Size: 70872
+MD5sum: 037efc8dae5755b907791008058b1951
+SHA1: f22b3a920064eab740985e910f185821f04bd087
+SHA256: 5e1443f4d1bc94fa2bc7ac6a775d5f2880459d065f9add3ef457571bbcba4e1c
+Section: Hack game
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=localiapstore
+Description: Pwns In-App purchases on iOS 5.1.1 - 7.1.X. Compatible with ARMv8 (64 Bit). Enable in settings. PRESS 'DISMISS' ON POPUP!
+Author: Hariboo Archive
+Depiction: http://repo.hackyouriphone.org/depiction/depiction.php?filename=localiapstore
+Name: LocalIAPStore
+Sileodepiction: https://depiction.hackyouriphone.org/sileoDepiction.php?filename=localiapstore
+
+Package: com.kjcracks.clutch
+Version: 2.0.4
+Architecture: iphoneos-arm
+Maintainer: KJCracks <unknown@unknown.com>
+Depends: firmware (>= 6.0), firmware (<= 10.3.4)
+Filename: debs/com.kjcracks.clutch_2.0.4.deb
+Size: 457658
+MD5sum: 91905c606662ce9b63de73285862f92b
+SHA1: 6bf72aef3a1faf5beb051eb61f581beac3195461
+SHA256: 2668bb247f772aed0ad1f44d1f6fcc59fcb499739ff2869984ebb0db1e4e9b06
+Section: Terminal
+Description: Clutch is a high-speed iOS decryption tool. It is used for decrypting apps currently installed and usable on the device.
+Author: KJCracks <unknown@unknown.com>
+Name: Clutch 2.0.4
+
+Package: com.lawin.saurik.impactor
+Version: 0.9.43
+Architecture: iphoneos-arm
+Maintainer: Jay Freeman (saurik) <saurik@saurik.com>
+Depends: firmware (>= 7.1), firmware (<= 10.3.3)
+Breaks: com.saurik.patych (<< 1.0.1)
+Filename: debs/com.saurik.impactor_0.9.43_iphoneos-arm.deb
+Size: 519274
+MD5sum: 25e4af2f1048ee9588ad3599cb4e83d6
+SHA1: 14f2c4f48ec07400b9e23682c7b7b5c8741fb4b4
+SHA256: 5b76540f4d7b3b31ced6baa857c8c34b2fee92338d7cdce95eb137befdb4f4bc
+Section: Unjailbreak
+Priority: optional
+Description: Xoa jailbreak va restore sach se tren iOS
+Tag: purpose::uikit, role::enduser
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+Depiction: http://cydia.saurik.com/info/com.saurik.impactor/
+Icon: file:///Applications/Eraser.app/Icon-60.png
+Name: Cydia Eraser
+
+Package: com.laxus.iosgodsiapcracker
+Version: 1.0-2+debug
+Architecture: iphoneos-arm
+Maintainer: Laxus
+Installed-Size: 296
+Depends: mobilesubstrate
+Filename: debs/iOS Gods IAP Cracker_1.0-2-debug_iphoneos-arm.deb
+Size: 18412
+MD5sum: f609fdef7758b9f6c5b544781c58ded7
+SHA1: 6c7108cb350d2442aebc099fe3b2feaf939a55d6
+SHA256: 9f4b9857cd7a8286a14b477e5796cc14d7d71224fb8d8987a5a0324c4871aeb7
+Section: Hack game
+Description: Free iAP Purchase for some apps and games, it doesn’t always work so don’t expect much. Turn on the tweak inside iOS Settings. This tweak is made by @Laxus for iOSGods.com, supported A12 / A13 devices
+Author: Laxus
+Name: iOSGods iAP Cracker
+
+Package: com.r333d.cylinder
+Version: 1.1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 1419
+Depends: firmware (>= 3.0), firmware (<= 13.7), mobilesubstrate (>= 0.9.5000), preferenceloader
+Filename: debs/cylinder_1.1.deb
+Size: 504270
+MD5sum: fcd79320ae5c4f5bcbaeae331e57e41f
+SHA1: 6c00bd5e887b537f49c7a7fbec29121f233ee27f
+SHA256: fab704e65d41a8c4d40d015cf9710b8ff960a1261e6f7c32cd5243ee5459d9a3
+Section: Useful thing
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cylinderDp
+Description: Make your icons dance
+Tag: purpose::extension, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
+Author: Reed Weichler <rweichler+cydia@gmail.com>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=cylinderDp
+Dev: rweichler
+Icon: file:///Library/PreferenceBundles/CylinderSettings.bundle/Icon@2x.png
+Name: Cylinder
+Sponsor: thebigboss.org <http://thebigboss.org>
+
+Package: com.soundwave.app
+Version: 1.0.0-126+debug
+Architecture: iphoneos-arm
+Maintainer: anazerka
+Installed-Size: 1196
+Filename: debs/com.soundwave.app_1.0.0-126+debug_iphoneos-arm.deb
+Size: 824048
+MD5sum: 920d2e41b89efa86b3b53a27c2aa2297
+SHA1: 823e505d7ba8ab85ba077e8a88ae1065d3fa2937
+SHA256: 3af09f89e0384ffe180242827ddef3c8a26d7a829ea7ab9212a1de5d4c38868c
+Section: Apps
+Description: SoundCloud client cho ios 5.1+
+Author: anazerka
+Name: SoundWave
+
+Package: eu.heinelt.ifile
+Version: 2.2.0-1
+Architecture: iphoneos-arm
+Maintainer: Carsten Heinelt <ifile@iphone.heinelt.eu>
+Installed-Size: 20224
+Depends: firmware (>= 2.0), firmware (<= 10.3.4), file-cmds, zip, unzip, p7zip, gzip, bzip2, unrar, diskdev-cmds
+Filename: debs/eu.heinelt.ifile_2.2.0-1_iphoneos-arm.deb
+Size: 9735664
+MD5sum: a1709dcd74e46ad4ca71a28955d86214
+SHA1: c4187bc859b1b4705fa1fc527b17f0974dc1891b
+SHA256: f48871ac1912094d6084bd84c53ed18d95fa5f3ae3cb09d602a5581b00fe195c
+Section: Tools
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ifileData
+Description: A File Manager and Viewer. iFile is a file manager runnning under user root. It allows fast navigation through the iPhone file system. It allows direct viewing of files of various types, e.g. movies, sound, text, HTML, Microsoft types, PDF, ZIP. For PDF files direct jumping to pages is possible. ZIP packing and unpacking is also supported. Files can be sent as email attachments. Text files and property lists can be edited. Folders and files can be bookmarked. In addition, files can be uploaded and downloaded from iFile's built-in web server.
+Tag: purpose::uikit, cydia::commercial
+Author: Carsten Heinelt <ifile@iphone.heinelt.eu>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ifileData
+Dev: carsten
+Name: iFile
+
+Package: io.github.oldworldordr.iconfix
+Version: 4.0.1
+Architecture: iphoneos-arm
+Maintainer: KawaiiZenbo
+Depends: curl
+Filename: debs/io.github.oldworldordr.iconfix-4.0.1.deb
+Size: 2058
+MD5sum: 7d6441b1b030736ddf966cb88ebb5766
+SHA1: 4dab75d18346812c8ad491a99b28abe640618bfc
+SHA256: 531497f8c23962295f01145745021ea4ce573f713f85388e4dee0f5f0a24b63a
+Section: Terminal
+Description: A shell script that fixes the iFile and MTerminal icons on iOS 6 and below.
+Author: OldWorldOrder <joey.t.reinhart@gmail.com>
+Name: iFile/MTerminal icon fix
+
+Package: net.angelxwind.appsync40plus
+Version: 1.2.2
+Architecture: iphoneos-arm
+Maintainer: Karen/あけみ <karen@akemi.ai>
+Pre-Depends: firmware (>= 4.0), firmware (<< 5.0)
+Conflicts: us.hackulo.appsync40, us.hackulo.appsync41, us.hackulo.appsync42
+Replaces: us.hackulo.appsync40, us.hackulo.appsync41, us.hackulo.appsync42
+Provides: appsync, us.hackulo.appsync40, us.hackulo.appsync41, us.hackulo.appsync42
+Filename: debs/net.angelxwind.appsync40plus.deb
+Size: 9202
+MD5sum: 4450d7c556bdf0504b14d678da5e5362
+SHA1: 7b0040049afef1d0309c108bcf0a7ed9d19921d4
+SHA256: 0d20fd163cfa37f4e63f054516d9b7c0f68801cf517594dbe2145faf50c5c8a7
+Section: Appsync
+Homepage: https://cydia.akemi.ai/
+Description: AppSync cho iOS 4.0 - 4.3.5 
+Author: Karen/あけみ, Dissident <karen@akemi.ai>
+Depiction: https://cydia.akemi.ai/?page/net.angelxwind.appsync40plus
+Name: AppSync for iOS 4.0
+
+Package: net.angelxwind.mikoto
+Version: 4.0.3
+Architecture: iphoneos-arm
+Maintainer: Karen/あけみ (angelXwind) <karen@angelxwind.net>
+Installed-Size: 15548
+Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader (>= 2.2.0-1), net.angelxwind.karenprefs (>= 1.4), net.angelxwind.karenlocalizer
+Conflicts: com.xcxiao.simplelsios10
+Filename: debs/nodelete-net.angelxwind.mikoto.deb
+Size: 11582804
+MD5sum: e1f49254a62ed949fd6d7d44c0b01043
+SHA1: 5717d7348bd1a23cc7bb94f659704409a21eeb8a
+SHA256: ea31dd47acfa2c397664ffb19e8bcc130d356d37fad49ccd6c45ebb32f06de69
+Section: Useful thing
+Homepage: https://cydia.angelxwind.net/
+Description: Comprehensive iOS System/App Store App customisation suite
+Author: Karen/あけみ (angelXwind) <karen@angelxwind.net>
+Depiction: https://cydia.angelxwind.net/?page/net.angelxwind.mikoto
+Icon: file:///Library/KarenRepoIcons/net.angelxwind.mikoto.png
+Name: mikoto
+
+Package: net.crazy.updateskiller
+Version: 1.0.2
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Installed-Size: 16
+Depends: mobilesubstrate, firmware (>= 5.0), firmware (<= 8.4.1)
+Conflicts: com.w00tylab.nootabadge, com.ragingninja.otabegone
+Replaces: com.w00tylab.nootabadge, com.ragingninja.otabegone
+Filename: debs/softwareupdatekiller_1.0.2.deb
+Size: 4618
+MD5sum: d9ff2684a58eaa75c40f5e992b96b38b
+SHA1: c8f1d415a6463cb70b93d34736de872ff42f71fa
+SHA256: 19d957113deb7591cd883459869d6ab20267fe5b0a5bbf02ec5b792f23489d0f
+Section: Useful thing
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=softwareupdatekillerDp
+Description: An hien thi update iOS
+Tag: purpose::extension
+Author: Lunatik <lunatik@crazy.net>
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=softwareupdatekillerDp
+Dev: lunatik
+Name: Software Update Killer
+
+Package: trevir.Discord
+Version: 0.8.5
+Architecture: iphoneos-arm
+Maintainer: InvoxiPlayGames <webmaster@invoxiplaygames.uk
+Depends: firmware (>=5.0)
+Filename: debs/discordclassic-0.8.5.deb
+Size: 819392
+MD5sum: a0c2471c860114d3d7d76ba7e1b7e61b
+SHA1: 9dc57ee4d8153fb90f03f08e5f0cbbb7aee8e2b4
+SHA256: 26d3e7b7f46286439774f358b0958e3eaaf53808a640fa06db9fdf7ba8a44bcc
+Section: Apps
+Description: Discord client cho iOS 5+
+Author: Trevir <triveri@outlook.com>
+Depiction: http://cydia.invoxiplaygames.uk/dp/classicdiscord.php
+Icon: file:///Applications/Discord.app/Icon@2x.png
+Name: Discord Classic
+
+Package: uk.invoxiplaygames.cydiahttpatch
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: InvoxiPlayGames <webmaster@invoxiplaygames.uk
+Installed-Size: 100
+Depends: cydia, mobilesubstrate, firmware (<< 4.0)
+Filename: debs/cydiahttpatch-1.0.deb
+Size: 2842
+MD5sum: 2100205abecf06d1a7d72d2636e770c4
+SHA1: 26c2c398c93f847aa007a7778b6148e554e395c6
+SHA256: 2c6ff66a0498eea88f786a17b8ca79400ae311a2f5f80d97eaeed44d4fe9d9bf
+Section: Useful thing
+Description: Removes HTTPS from Cydia to use on iOS 3.
+Author: InvoxiPlayGames <webmaster@invoxiplaygames.uk>
+Depiction: http://cydia.invoxiplaygames.uk/dp/cydiahttpatch.php
+Name: Cydia HTTPatch
+
+Package: uk.invoxiplaygames.discold
+Version: 0.1.1
+Architecture: iphoneos-arm
+Maintainer: InvoxiPlayGames <webmaster@invoxiplaygames.uk>
+Installed-Size: 132
+Depends: mobilesubstrate
+Filename: debs/discold-0.1.1.deb
+Size: 6582
+MD5sum: a23fc764ecebdae21f1f6d87cce288ad
+SHA1: a9f19d4ccc96e833f7ee92a9da625f15f8922843
+SHA256: 33b3ebaa95754764334c46aa9ac31a5d28aee43a1590ee55c2685679406b7cdf
+Section: Useful thing
+Description: Fixes the Discord crash bug on iOS 7-9.
+Author: InvoxiPlayGames <webmaster@invoxiplaygames.uk>
+Depiction: http://cydia.invoxiplaygames.uk/dp/discold.php
+Name: DiscOld [BETA]
+
+Package: us.hackulo.appsync31
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: Genius Blog <appsync@hackulo.us>
+Pre-Depends: firmware (= 3.1) | firmware (= 3.1.1) | firmware (= 3.1.2) | firmware (= 3.1.3) | firmware (= 3.1.4)
+Depends: com.hackulo.us.sourcegui
+Filename: debs/appsync31-1.0.1.deb
+Size: 296542
+MD5sum: 534080636c26e40d3efbdf195f3bfdfb
+SHA1: 2e3be3668f26c9d4ac7b796042aa7b05184fe4ae
+SHA256: c0975018be2f1fe73eaeadce9a3c4ead17ab01b08eb41bd11a82b2f83c60fb70
+Section: Appsync
+Priority: standard
+Description: Appsync cho iOS 3.1 - 3.1.3
+Author: Reilly <appsync@hackulo.us>
+Depiction: http://hackulo.us/depict/appsync31/
+Name: AppSync for OS 3.1
+Sponsor: Hackulo.us <http://hackulo.us>
+
