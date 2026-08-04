@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Hariboo's Repo - Kho nguồn Cydia cá nhân dành cho iOS đã jailbreak. Thêm vào Cydia hoặc Zebra chỉ với 1 chạm.">
+<title>Hariboo's Repo</title>
+<style>
+/* =====================================================================
+   Hariboo's Repo — phong cách iPhoneOS 1-3 (Skeuomorphic)
+   Tông màu: Đỏ / Trắng.
+   Không dùng thư viện ngoài. Mọi gradient/bo góc/đổ bóng đều có lớp
+   dự phòng cú pháp -webkit-gradient() cũ trước, rồi mới đến chuẩn hiện
+   đại — Safari iPhoneOS cổ bỏ qua dòng không hiểu và giữ nguyên dòng
+   trước đó, trình duyệt mới sẽ đọc được dòng cuối cùng.
+   ===================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #1c1c1e;
+  background-color: #f7ecec; /* nền dự phòng cho trình duyệt không hiểu gradient lặp */
+  background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 4px, #fbe9e9 4px, #fbe9e9 8px);
+  overflow-x: hidden;
+  padding-bottom: 20px;
+}
+
+a { text-decoration: none; }
+
+/* ===== Khung "điện thoại" — căn giữa & biến thành thẻ trên màn rộng ===== */
+.phone { max-width: 460px; margin: 0 auto; }
+
+/* ===== Navigation Bar — kim loại chải đỏ cổ điển ===== */
+.navbar {
+  position: relative;
+  height: 44px;
+  text-align: center;
+  border-bottom: 1px solid #4a0a0a;
+  background-color: #b3201f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3453f), to(#7a1010));
+  background-image: -webkit-linear-gradient(top, #e3453f, #7a1010);
+  background-image: linear-gradient(to bottom, #e3453f, #7a1010);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 2px 5px rgba(0,0,0,0.35);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 2px 5px rgba(0,0,0,0.35);
+}
+.navbar:after { /* vân sọc mờ kiểu brushed metal */
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image: repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 3px);
+}
+.navbar-title {
+  position: relative;
+  z-index: 1;
+  line-height: 44px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.6);
+}
+
+/* ===== Khối giới thiệu / app icon ===== */
+.intro { text-align: center; padding: 20px 16px 4px; }
+.app-icon {
+  position: relative;
+  overflow: hidden;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid #e8b9b7;
+  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+}
+.app-icon img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.app-icon:before { /* gương bóng gloss đặc trưng icon iPhoneOS, làm mờ để không che ảnh */
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0; left: 0; right: 0;
+  height: 45%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.38)), to(rgba(255,255,255,0.02)));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.38), rgba(255,255,255,0.02));
+  pointer-events: none;
+}
+.intro-sub { font-size: 13px; color: #6b6f76; }
+
+/* ===== Nút hành động chính (glossy buttons) ===== */
+.action-group { padding: 6px 12px 0; margin-top: 8px; }
+.btn {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 0;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+}
+.btn-cydia {
+  color: #fff;
+  border-color: #6e0f0f;
+  background-color: #c9302c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef6a63), color-stop(0.5, #d13a34), to(#8f1414));
+  background-image: -webkit-linear-gradient(top, #ef6a63 0%, #d13a34 50%, #8f1414 100%);
+  background-image: linear-gradient(to bottom, #ef6a63 0%, #d13a34 50%, #8f1414 100%);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5), 0 1px 3px rgba(0,0,0,0.3);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+}
+.btn-cydia:active { background: #8f1414; }
+.btn-zebra {
+  color: #a81f1f;
+  border-color: #e3aeae;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.5, #fff3f3), to(#fbe4e4));
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #fff3f3 50%, #fbe4e4 100%);
+  background-image: linear-gradient(to bottom, #ffffff 0%, #fff3f3 50%, #fbe4e4 100%);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 3px rgba(0,0,0,0.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 1px 3px rgba(0,0,0,0.12);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+.btn-zebra:active { background: #f6d9d9; }
+
+.hint { text-align: center; font-size: 12px; color: #6b6f76; margin: 4px 24px 2px; min-height: 14px; }
+.hint-ios {
+  display: block;
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #a8141a;
+  background-color: #ffecec;
+  border: 1px solid #f2b7b7;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 8px 12px;
+  margin: 8px 20px 2px;
+  line-height: 1.4;
+}
+
+/* ===== Section header kiểu Settings app ===== */
+.section-header {
+  margin: 22px 16px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6b6f76;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.section-intro {
+  margin: 0 16px 8px;
+  font-size: 12.5px;
+  color: #6b6f76;
+  line-height: 1.4;
+}
+
+/* ===== Grouped Table View ===== */
+.group {
+  background-color: #fff;
+  border: 1px solid #e3c3c3;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: 0 10px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 1px 2px rgba(0,0,0,0.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.7), 0 1px 2px rgba(0,0,0,0.08);
+}
+.row {
+  display: block;
+  padding: 12px 14px;
+  border-bottom: 1px solid #f0dcdc;
+  overflow: hidden; /* clearfix cho badge float */
+  font-size: 15px;
+  line-height: 1.45;
+  color: #111;
+}
+.row.row-last { border-bottom: none; }
+.badge {
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #b3201f;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e3453f), to(#8f1414));
+  background-image: -webkit-linear-gradient(top, #e3453f, #8f1414);
+  background-image: linear-gradient(to bottom, #e3453f, #8f1414);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 22px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+}
+.row-text { display: block; overflow: hidden; padding-top: 1px; }
+
+/* Ô URL + nút sao chép, thụt lề bằng đúng độ rộng badge phía trên */
+.url-box {
+  margin: 8px 14px 8px 46px;
+  padding: 9px 11px;
+  background-color: #fbf1f1;
+  border: 1px solid #ecd2d2;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12.5px;
+  color: #a8141a;
+  word-break: break-all;
+}
+.copy-wrap { margin: 0 14px 14px 46px; }
+.copy-btn {
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #a8141a;
+  background-color: #fbeeee;
+  border: 1px solid #e9c9c9;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.copy-btn:active { background-color: #f2d5d5; }
+
+/* Khối cảnh báo — vẫn dạng grouped box, tông đỏ nhạt để đồng bộ chủ đề */
+.warning-box { border-color: #eab3b0; background-color: #fdeceb; }
+.warning-box .row { color: #7a2323; }
+.badge-warning {
+  background-color: #c0392b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e0584a), to(#a4271b));
+  background-image: -webkit-linear-gradient(top, #e0584a, #a4271b);
+  background-image: linear-gradient(to bottom, #e0584a, #a4271b);
+}
+
+/* Dòng liên hệ — có mũi tên disclosure kiểu iOS */
+.row-link { position: relative; padding-right: 30px; color: #111; }
+.row-link:active { background-color: #fdeceb; }
+.chevron { position: absolute; right: 14px; top: 50%; margin-top: -11px; font-size: 19px; color: #d3a9a9; }
+.sep { color: #c79a9a; margin: 0 4px; font-weight: normal; }
+
+/* Badge icon giữ đúng màu thương hiệu để dễ nhận diện */
+.badge-zalo {
+  background-color: #0068ff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4c9bff), to(#0050c8));
+  background-image: -webkit-linear-gradient(top, #4c9bff, #0050c8);
+  background-image: linear-gradient(to bottom, #4c9bff, #0050c8);
+}
+.badge-fb {
+  background-color: #1877f2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4d96f5), to(#0f5bc4));
+  background-image: -webkit-linear-gradient(top, #4d96f5, #0f5bc4);
+  background-image: linear-gradient(to bottom, #4d96f5, #0f5bc4);
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* ===== Footer ===== */
+.footer { text-align: center; font-size: 11px; color: #8a7676; margin-top: 26px; padding: 0 20px; }
+
+/* ===== Màn hình rộng: nội dung thu lại thành "thẻ" điện thoại ===== */
+@media (min-width: 500px) {
+  body { padding: 30px 10px; }
+  .phone {
+    background-color: #fff8f8;
+    border: 1px solid #e3c3c3;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+}
+</style>
+</head>
+<body>
+<div class="phone">
+
+  <div class="navbar"><h1 class="navbar-title">Hariboo's Repo</h1></div>
+
+  <div class="intro">
+    <div class="app-icon"><img src="data:image/jpeg;base64,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" alt="Hariboo's Repo"></div>
+    <p class="intro-sub">Kho nguồn Cydia cá nhân — Tweak &amp; Ứng dụng jailbreak</p>
+  </div>
+
+  <!-- Nút thêm nguồn -->
+  <div class="action-group">
+    <a class="btn btn-cydia" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://hariboo112.github.io/cydia">Thêm vào Cydia</a>
+    <a class="btn btn-zebra" href="zbra://sources/add/https://hariboo112.github.io/cydia">Thêm vào Zebra</a>
+  </div>
+  <p class="hint" id="deviceHint"></p>
+
+  <!-- Hướng dẫn thêm repo thủ công -->
+  <h2 class="section-header">Hướng dẫn thêm repo thủ công</h2>
+  <div class="group">
+    <div class="row">
+      <span class="badge">1</span>
+      <span class="row-text">Mở <b>Cydia</b> → chọn tab "Các nguồn" (Sources).</span>
+    </div>
+    <div class="row">
+      <span class="badge">2</span>
+      <span class="row-text">Bấm "Sửa" (Edit) → "Thêm" (Add).</span>
+    </div>
+    <div class="row row-last">
+      <span class="badge">3</span>
+      <span class="row-text">Nhập đường dẫn sau vào ô vừa hiện ra:</span>
+    </div>
+    <div class="url-box" id="repoUrl">https://hariboo112.github.io/cydia</div>
+    <div class="copy-wrap">
+      <button type="button" class="copy-btn" id="copyBtn" onclick="copyRepoUrl()">Sao chép đường dẫn</button>
+    </div>
+  </div>
+
+  <!-- Lưu ý quan trọng -->
+  <h2 class="section-header">Lưu ý quan trọng</h2>
+  <div class="group warning-box">
+    <div class="row row-last">
+      <span class="badge badge-warning">!</span>
+      <span class="row-text">Repo chỉ áp dụng cho iOS 5.1+ (Tạm thời chưa phân phối cho iOS 5.0.1 hoặc cũ hơn vì lỗi SSL 9800 do GitHub dí súng vào đầu tôi và ép nó theo chuẩn HTTPS).</span>
+    </div>
+  </div>
+
+  <!-- Hỗ trợ / liên hệ -->
+  <h2 class="section-header">Hỗ trợ / liên hệ</h2>
+  <p class="section-intro">Nếu cần hỗ trợ hoặc muốn đóng góp/thêm Tweak hãy liên hệ các nền tảng sau:</p>
+  <div class="group">
+    <a class="row row-link" href="https://www.zalo.me/84565800108" target="_blank" rel="noopener noreferrer">
+      <span class="badge badge-zalo">Z</span>
+      <span class="row-text">Zalo<span class="sep">|</span>0565800108</span>
+      <span class="chevron">›</span>
+    </a>
+    <a class="row row-last row-link" href="https://www.facebook.com/selenophile.08" target="_blank" rel="noopener noreferrer">
+      <span class="badge badge-fb">f</span>
+      <span class="row-text">Facebook<span class="sep">|</span>Louis Nguyễn</span>
+      <span class="chevron">›</span>
+    </a>
+  </div>
+
+  <div class="footer"><p>© <span id="year"></span> Hariboo's Repo</p></div>
+
+</div>
+
+<script>
+(function () {
+  var yearEl = document.getElementById('year');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+  var hint = document.getElementById('deviceHint');
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  if (hint) {
+    if (isIOS) {
+      hint.className = 'hint hint-ios';
+      hint.textContent = 'Đã phát hiện thiết bị iOS — chạm nút bên trên để mở Cydia hoặc Zebra.';
+    } else {
+      hint.className = 'hint';
+      hint.textContent = 'Vui lòng sử dụng thiết bị iOS đã jailbreak từ iOS 5.1 trở lên để sử dụng';
+    }
+  }
+})();
+
+function copyRepoUrl() {
+  var text = document.getElementById('repoUrl').textContent;
+  var btn = document.getElementById('copyBtn');
+
+  function done(ok) {
+    if (!btn) { return; }
+    btn.textContent = ok ? 'Đã chép!' : 'Không thể sao chép';
+    setTimeout(function () { btn.textContent = 'Sao chép đường dẫn'; }, 1600);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    return;
+  }
+  try {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    done(true);
+  } catch (e) {
+    done(false);
+  }
+}
+</script>
+</body>
+</html>
