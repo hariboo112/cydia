@@ -1,0 +1,8 @@
+Origin: Hariboo
+Label: Hariboo's Repo
+Suite: stable
+Version: 1.0
+Codename: ios5
+Architectures: iphoneos-arm
+Components: main
+Description: Kho luu tru tweak ca nhan cua Hariboo
